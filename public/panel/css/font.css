@@ -1,0 +1,26 @@
+
+
+@import url("../icons/simple-line-icons/css/simple-line-icons.css");
+@import url("../icons/font-awesome-old/css/font-awesome.min.css");
+@import url("../icons/avasta/css/style.css");
+@import url("../icons/flaticon/flaticon.css");
+@import url("../2.0/lineicons.css");
+@import url("../vendor/animate/animate.min.css");
+@import url("../vendor/aos/css/aos.min.css");
+@import url("../icons/line-awesome/css/line-awesome.min.css");
+@import url("../icons/material-design-iconic-font/css/materialdesignicons.min.css");
+@import url("../icons/themify-icons/css/themify-icons.css");
+@import url("../vendor/perfect-scrollbar/css/perfect-scrollbar.css");
+@import url("../vendor/metismenu/css/metismenu.min.css");
+
+@font-face{
+    font-family:iransans-bold;
+    src:url('../fonts/AOrdibeheshtShablon/A Ordibehesht Shablon.TTf');
+   /* src:url('../fonts/iransans-normal/eot/IRANSansWeb_UltraLight.eot') format('embedded-opentype'),
+    url('../fonts/iransans-normal/woff/IRANSansWeb_UltraLight.woff') format('woff'),
+    url('../fonts/iransans-normal/woff2/IRANSansWeb_UltraLight.woff2') format('woff2')*/
+
+}
+body {
+    font-family: iransans-bold;
+     }
