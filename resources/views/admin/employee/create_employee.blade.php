@@ -8,7 +8,7 @@
 
         <div class="card">
             <div class="card-header">
-                <h4 class="card-title"> مشخصات پرسنل</h4>
+                {{ Breadcrumbs::render('createEmployees') }}
             </div>
 
             <div class="card-body">

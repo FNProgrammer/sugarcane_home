@@ -71,9 +71,9 @@
                                 <td class="text-center align-middle">{{($contract->start_date)}}</td>
                                 <td class="text-center align-middle">{{($contract->end_date)}}</td>
                                   @if($contract->status == 0)
-                                    <td class="form-check-input" name="status" type="checkbox" >غیرفعال</td>
+                                    <td class="text-center align-middle" name="status"  >غیرفعال</td>
                                 @else
-                                    <td class="form-check-input" name="status" type="checkbox" >فعال</td>
+                                    <td class="text-center align-middle" name="status"  >فعال</td>
                                 @endif
                                 <td class="text-center align-middle">{{($contract->enddate)}}</td>
                                 <td class="text-center align-middle">{{Hekmatinasser\Verta\Verta::instance( $contract->created_at)->format('%B %d، %Y')}}</td>

@@ -8,7 +8,7 @@
 
         <div class="card">
             <div class="card-header">
-                <h4 class="card-title">شرکت های توسعه نیشکر</h4>
+                {{ Breadcrumbs::render('createCompany') }}
             </div>
 
             <div class="card-body">

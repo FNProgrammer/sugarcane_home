@@ -8,7 +8,7 @@
 
         <div class="card">
             <div class="card-header">
-                <h4 class="card-title"> اجاره بها منازل سازمانی</h4>
+                {{ Breadcrumbs::render('createHome_prices') }}
             </div>
 
             <div class="card-body">

@@ -7,7 +7,7 @@
 
         <div class="card">
             <div class="card-header">
-                <h4 class="card-title">لیست منازل سازمانی</h4>
+                {{ Breadcrumbs::render('homes') }}
             </div>
             @if(Session::has('message'))
                 <div class="alert alert-secondary solid alert-rounded">
@@ -68,9 +68,9 @@
                                 <td class="text-center align-middle" > {{($home->unit)}} </td>
                                 <td class="text-center align-middle">{{($home->home_kind->title)}}</td>
                                 @if($home->rent == 0)
-                                <td class="form-check-input" name="rent" type="checkbox" >false</td>
+                                <td class="text-center align-middle" name="rent" >false</td>
                                 @else
-                                    <td class="form-check-input" name="rent" type="checkbox" >true</td>
+                                    <td class="text-center align-middle" name="rent"  >true</td>
                                 @endif
                                 <td class="text-center align-middle">{{Hekmatinasser\Verta\Verta::instance( $home->created_at)->format('%B %d، %Y')}}</td>
                                 <td class="text-center align-middle">{{Hekmatinasser\Verta\Verta::instance( $home->updated_at)->format('%B %d، %Y')}}</td>

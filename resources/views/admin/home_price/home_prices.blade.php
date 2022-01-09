@@ -7,7 +7,7 @@
 
         <div class="card">
             <div class="card-header">
-                <h4 class="card-title">لیست اجاره بها منازل سازمانی</h4>
+                {{ Breadcrumbs::render('home_prices') }}
             </div>
             @if(Session::has('message'))
                 <div class="alert alert-secondary solid alert-rounded">
@@ -70,9 +70,9 @@
                                 <td class="text-center align-middle">{{$home_price->from_date}}</td>
                                 <td class="text-center align-middle">{{$home_price->to_date}}</td>
                                    @if($home_price->status == 0)
-                                 <td class="form-check-input" name="status" type="checkbox" >غیرفعال</td>
+                                 <td class="text-center align-middle" name="status" >غیرفعال</td>
                                 @else
-                                    <td class="form-check-input" name="status" type="checkbox" >فعال</td>
+                                    <td class="text-center align-middle" name="status"  >فعال</td>
                                 @endif
                                 <td class="text-center align-middle">{{Hekmatinasser\Verta\Verta::instance( $home_price->created_at)->format('%B %d، %Y')}}</td>
                                 <td class="text-center align-middle">{{Hekmatinasser\Verta\Verta::instance( $home_price->updated_at)->format('%B %d، %Y')}}</td>

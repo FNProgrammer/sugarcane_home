@@ -8,7 +8,7 @@
 
         <div class="card">
             <div class="card-header">
-                <h4 class="card-title">لیست سمت های سازمانی</h4>
+                {{ Breadcrumbs::render('companies') }}
             </div>
             @if(Session::has('message'))
                 <div class="alert alert-secondary solid alert-rounded">

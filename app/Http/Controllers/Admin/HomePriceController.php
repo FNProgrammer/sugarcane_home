@@ -18,17 +18,6 @@ class HomePriceController extends Controller
     {
         $home_prices = HomePrice::query()->where('status','=' ,1)->paginate(5);
 
-        $home_prices2 = HomePrice::query()->where('status','=' ,1)->get();
-        @Foreach($home_prices2 as $home_prices2)
-
-        $unit = $home_prices2->from_date;
-        $yrdata= strtotime( $unit );
-
-        $timestampDay = date('d',$yrdata);
-
-        dd( $unit);
-
-          @endforeach
         return view('admin.home_price.home_prices', compact('home_prices'));
     }
 

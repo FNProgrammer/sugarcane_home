@@ -8,7 +8,7 @@
 
         <div class="card">
             <div class="card-header">
-                <h4 class="card-title"> مشخصات منازل سازمانی</h4>
+                {{ Breadcrumbs::render('createHomes') }}
             </div>
 
             <div class="card-body">

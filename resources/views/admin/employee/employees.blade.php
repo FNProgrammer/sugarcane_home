@@ -7,7 +7,7 @@
 
         <div class="card">
             <div class="card-header">
-                <h4 class="card-title">لیست پرسنل</h4>
+                {{ Breadcrumbs::render('employees') }}
             </div>
             @if(Session::has('message'))
                 <div class="alert alert-secondary solid alert-rounded">
@@ -80,9 +80,9 @@
                                 <td class="text-center align-middle">{{($employee->company->title)}}</td>
                                 <td class="text-center align-middle">{{($employee->position->title)}}</td>
                                 @if($employee->status == 0)
-                                    <td class="form-check-input" name="status" type="checkbox" >غیرفعال</td>
+                                    <td class="text-center align-middle" name="status"  >غیرفعال</td>
                                 @else
-                                    <td class="form-check-input" name="status" type="checkbox" >فعال</td>
+                                    <td class="text-center align-middle" name="status"  >فعال</td>
                                 @endif
                                 <td class="text-center align-middle">{{Hekmatinasser\Verta\Verta::instance( $employee->created_at)->format('%B %d، %Y')}}</td>
                                 <td class="text-center align-middle">{{Hekmatinasser\Verta\Verta::instance( $employee->updated_at)->format('%B %d، %Y')}}</td>
